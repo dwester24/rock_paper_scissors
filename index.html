@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
     <title>Document</title>
 
 </head>
@@ -13,21 +16,28 @@
     <header class="header">Rock Paper Scissors</header>
 
     <div id="score">
-        <div>
-            <p id="results">Round result: </p>
+        <div class="results">
+            <p id="resultTitle">Round result:</p>
+            <p id="results"></p>
         </div>
-        <div>
-            <p id="playerScore">Player: 0</p>
-        </div>
-        <div>
-            <p id="computerScore">Computer: 0</p>
+        <div class="scoreBoard">
+            <div class="player">
+                <p id="playerId">You:</p>
+                <p id="playerScore">0</p>
+            </div>
+            <div class="computer">
+                <p id="computerId">Computer: </p>
+                <p id="computerScore">0</p>
+            </div>
+
         </div>
     </div>
-
+<div class="btnGroup">
     <button id="rockBtn">Rock</button>
     <button id="paperBtn">Paper</button>
     <button id="scissorsBtn">Scissors</button>
     <button id="reset">Reset</button>
+</div>
 
 
 

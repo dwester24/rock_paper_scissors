@@ -43,23 +43,23 @@ const checkRoundWinner = (player, computer) => {
                (player === 'scissors' && computer === 'paper')){
 
                 playerScore ++;
-                playerSc.innerHTML = `Player: ${playerScore}`;
-                results.innerHTML = `Round result: You Win! ${player} beats ${computer}`;
+                playerSc.innerHTML = `${playerScore}`;
+                results.innerHTML = `You Win! ${player} beats ${computer}`;
     } else {
         computerScore ++;
-        computerSC.innerHTML = `Computer: ${computerScore}`;
-        results.innerHTML = `Round result: You Lose! ${computer} beats ${player}`;
+        computerSC.innerHTML = `${computerScore}`;
+        results.innerHTML = `You Lose! ${computer} beats ${player}`;
     }
 }
 
 // Helper function to check game winner
 const checkGameWinner = () => {
     if (playerScore > computerScore) {
-        results.innerHTML = `You Win!`;
+        results.innerHTML = `You won the game!`;
     } else if (playerScore < computerScore) {
-        results.innerHTML = 'You Lose!';
+        results.innerHTML = 'You lost the game!';
     } else {
-        results.innerHTML = 'You tied!';
+        results.innerHTML = 'You tied the game!';
     }
 };
 
@@ -80,9 +80,9 @@ scissors.addEventListener('click', function() {
 
 reset.addEventListener('click', function() {
     // Reset UI
-    results.innerHTML = 'Round result: ';
-    playerSc.innerHTML = 'Player: 0';
-    computerSC.innerHTML = 'Computer: 0';
+    results.innerHTML = '';
+    playerSc.innerHTML = '0';
+    computerSC.innerHTML = '0';
 
     // Reset game variables
     roundCount = 0;

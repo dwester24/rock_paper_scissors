@@ -1,0 +1,89 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 36px;
+}
+.score {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.results {
+    background-color: gray;
+    width: 800px;
+    height: 150px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+#results {
+    text-align: center;
+    font-size: 30px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+#resultTitle {
+    text-align: center;
+    font-size: 32px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.player,
+.computer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    background-color: gray;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.scoreBoard {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    margin: auto;
+    width: 800px;
+    height: 200px;
+   margin-bottom: 100px;
+}
+
+#playerId,
+#computerId,
+#playerScore,
+#computerScore {
+    background-color: gray;
+}
+
+#computerId {
+    margin-left: 1px;
+}
+
+.btnGroup {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: auto;
+}
+
+button {
+    background-color:gray;
+    margin: auto;
+    width: 150px;
+    height: auto;
+    font-size: 24px;
+}
